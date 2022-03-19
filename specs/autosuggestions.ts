@@ -1,7 +1,8 @@
 
-describe("dropdown",async()=>{
 
-    it("setting values from dropdown", async ()=>{
+describe("Dropdown Auto Suggestions "+ browser.config.browserName ,async()=>{
+
+    it("Selecting values from dropdown"  , async ()=>{
 
         await browser.url("https://google.com/");
        const search = await $('[name="q"]');

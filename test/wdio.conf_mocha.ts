@@ -32,7 +32,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-         './specs/**/*.ts'
+         './specs/**/TRend2end.ts'
     ],
     // Patterns to exclude.
     exclude: [
@@ -121,7 +121,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://travelrepublic.co.uk',
+    baseUrl: 'https://www.travelrepublic.co.uk',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,

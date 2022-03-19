@@ -16,7 +16,7 @@ And Choose rooms
 And Choose the flight
 And Populate guest details 
 And Populate address details
-# And Populate payment details
+#  And Populate payment details
 # And Confirm hotel booking
 # Then I should be presented with the booking id 
 

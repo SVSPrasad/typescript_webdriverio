@@ -56,19 +56,25 @@ class PaymentOptionsPage{
      await (await this.AddressDialogTrigger).click()
      await (await this.AddressSearch).click()
      await (await this.AddressSearch).setValue("KT26nh")
-     await browser.pause(1000)
+     await browser.pause(3000)
      await (await this.address).click()
+    //  if (await (await this.address).isDisplayed())
+    //  await (await this.address).click()
     }
 
     
     async PopulatePaymentDetails ()
     {
        // https://pp2.travelrepublic.co.uk/v3/booking/payment-details/ba7a9096-1bf0-477b-9c45-5f105513f81d/0/d4bc39de-0ac6-4d2b-a306-cf7dd03e2ff8/
+       await browser.pause(20000)
+    await (await this.expiryDate).scrollIntoView()
     await (await this.expiryDate).setValue("10/27")
+    browser.pause(10000)
     await browser.switchToFrame(0)
     await (await this.ccNumber).setValue("4444333322221111")
     await browser.switchToParentFrame() 
-    await browser.switchToFrame(1)
+    browser.pause(10000)
+    await browser.switchToFrame($("#pciFrame_cvv3"))
     await (await this.ccv).setValue("111")
     browser.pause(100000)
      

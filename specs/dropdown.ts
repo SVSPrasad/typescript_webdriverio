@@ -1,6 +1,6 @@
 describe("dropdown",async()=>{
 
-    it("seelting values from dropdown", async ()=>{
+    it("Selecting values from dropdown", async ()=>{
 
         await browser.url("https://facebook.com/");
         await browser.maximizeWindow();

@@ -29,19 +29,11 @@ console.log("forgot link text " + forgotLinkText);
 expect(forgotlink).toHaveValueContaining("forgot");
 expect(forgotlink).toHaveValue("Forgot your password?");
 
-
         await username.setValue("admin");
         console.log("username entered is " + await username.getValue())
         await password.setValue("admin123");
         console.log("password entered is " + await password.getValue())
         await login.click();
 
-        
-
-
     });
-
-
-
-
 });
